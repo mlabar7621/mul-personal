@@ -1,2 +1,8 @@
 # mul-personal
-Mikhail Labar personal site
+Mikhail Labar's personal site
+
+Includes:
+Resume
+Portfolio
+Certifications
+Multiple Language Options
