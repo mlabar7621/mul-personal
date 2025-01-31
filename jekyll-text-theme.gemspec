@@ -1,10 +1,10 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-text-theme"
-  spec.version       = "2.2.6"
-  spec.authors       = ["Tian Qi"]
-  spec.email         = ["kitian616@outlook.com"]
+  spec.name          = "jekyll-text-theme-ml"
+  spec.version       = "1.0.0"
+  spec.authors       = ["Mikhail Labar"]
+  spec.email         = ["mikhail.labar@gmail.com"]
 
   spec.summary       = %q{A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.}
   spec.homepage      = "https://github.com/kitian616/jekyll-TeXt-theme"

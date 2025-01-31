@@ -1,8 +1,8 @@
 {
-  "name": "jekyll-text-theme",
-  "version": "2.2.6",
-  "author": "Tian Qi",
-  "license": "MIT",
+  "name": "jekyll-text-theme-ml",
+  "version": "1.0.0",
+  "author": "Mikhail Labar",
+  "license": "None",
   "keywords": [
     "jekyll",
     "jekyll-theme",

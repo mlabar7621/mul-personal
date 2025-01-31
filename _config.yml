@@ -30,6 +30,15 @@ description: > # this means to ignore newlines until "Language & timezone"
 lang: en
 timezone: America/New_York
 
+## => Polyglot
+##############################
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["assets/css", "assets/img"]
+parallel_localization: false
+
+sass:
+  sourcemap: never
 
 ## => Author and Social
 ##############################
@@ -223,3 +232,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-polyglot
