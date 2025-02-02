@@ -6,13 +6,30 @@
   <header class="header" {%- if include.background -%} style="background: {{ include.background }};" {%- endif -%}>
 {%- endif -%}
     <div class="main">
+      <ul class="menu__list">
+      <li>
+        <span>{{ site.active_lang }}</span>
+        <ul>
+          {% for lang in site.languages %}
+          <li>
+            {% if lang != site.active_lang %}
+            <a {% static_href%}href="{% if lang == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ lang }}{{page.url}}{% endif %}"{% endstatic_href %}>
+              {{ lang }}
+            </a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+      </ul>
+
       <div class="header__title">
         <div class="header__brand">
           {%- include svg/logo.svg -%}
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
-          {%- if site.title -%}
-            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
+          {%- if site.data.l10n.title -%}
+            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.data.l10n.title }}</a>
           {%- endif -%}
         </div>
         {%- if site.search.provider -%}

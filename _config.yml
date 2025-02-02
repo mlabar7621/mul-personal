@@ -32,7 +32,7 @@ timezone: America/New_York
 
 ## => Polyglot
 ##############################
-languages: ["en", "fr"]
+languages: ["en", "fr", "be", "de", "ru"]
 default_lang: "en"
 exclude_from_localization: ["assets/css", "assets/img"]
 parallel_localization: false
