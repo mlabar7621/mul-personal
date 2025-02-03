@@ -1,7 +1,5 @@
-{%- include snippets/get-locale-string.html key='CANCEL' -%}
-{%- assign _locale_cancel = __return -%}
-{%- include snippets/get-locale-string.html key='SEARCH' -%}
-{%- assign _locale_search = __return -%}
+{%- assign _locale_cancel = site.data.locale.[site.active_lang].CANCEL -%}
+{%- assign _locale_search = site.data.locale.[site.active_lang].SEARCH -%}
 
 {%- if site.search.provider == 'google' -%}
   <script>window.useDefaultSearchBox = false;</script>
