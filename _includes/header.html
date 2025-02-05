@@ -43,7 +43,7 @@
                 <!--link in dropdown-->
                 <li>
                   <span>
-                    <img src="{{site.data.locale.[site.active_lang].ICON_PATH}}">
+                    <img src="{{site.baseurl}}{{site.data.locale.[site.active_lang].ICON_PATH}}">
                     {{ site.data.locale.[site.active_lang].SWITCHER_MENU_NAME }}
                   </span>
                   <ul>
@@ -51,7 +51,7 @@
                       {% if lang != site.active_lang %}
                       <li>
                         <a href="{%- if lang != site.default_lang -%}{{site.baseurl}}/{{ lang }}{{page.url}}{%- else -%}{{site.baseurl}}{{page.url}}{%- endif -%}">
-                          <img src="{{site.data.locale.[lang].ICON_PATH}}"> <!--set height equivalent to font-size-h4-small-->
+                          <img src="{{site.baseurl}}{{site.data.locale.[lang].ICON_PATH}}">
                           {{ site.data.locale.[lang].SWITCHER_MENU_NAME }}
                         </a>
                       </li>
@@ -79,6 +79,7 @@
               {%- endif -%}
             {%- endif -%}
           {%- endfor -%}
+          <!--language switcher-->
           <li>
             <span>
               <img src="{{site.data.locale.[site.active_lang].ICON_PATH}}">
