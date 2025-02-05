@@ -50,7 +50,7 @@
                     {% for lang in site.languages %}
                       {% if lang != site.active_lang %}
                       <li>
-                        <a {% static_href%}href="{%- if lang != site.default_lang -%}{{site.baseurl}}/{{ lang }}{{page.url}}{%- else -%}{{site.baseurl}}{{page.url}}{%- endif -%}"{% endstatic_href %}>
+                        <a href="{%- if lang != site.default_lang -%}{{site.baseurl}}/{{ lang }}{{page.url}}{%- else -%}{{site.baseurl}}{{page.url}}{%- endif -%}">
                           <img src="{{site.data.locale.[lang].ICON_PATH}}"> <!--set height equivalent to font-size-h4-small-->
                           {{ site.data.locale.[lang].SWITCHER_MENU_NAME }}
                         </a>
@@ -88,7 +88,7 @@
               {% for lang in site.languages %}
                 {% if lang != site.active_lang %}
                 <li>
-                  <a {% static_href%}href="{%- if lang != site.default_lang -%}{{site.baseurl}}/{{ lang }}{{page.url}}{%- else -%}{{site.baseurl}}{{page.url}}{%- endif -%}"{% endstatic_href %}>
+                  <a {% static_href %}href="{%- if lang != site.default_lang -%}{{site.baseurl}}/{{ lang }}{{page.url}}{%- else -%}{{site.baseurl}}{{page.url}}{%- endif -%}"{% endstatic_href %}>
                     <img src="{{site.data.locale.[lang].ICON_PATH}}"> <!--set height equivalent to font-size-h4-small-->
                     {{ site.data.locale.[lang].SWITCHER_MENU_NAME }}
                   </a>
