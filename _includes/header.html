@@ -9,10 +9,8 @@
       <div class="header__title">
         <div class="header__brand">
           {%- include svg/logo.svg -%}
-          {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
-          {%- include snippets/get-nav-url.html path=_paths_root -%}
           {%- if site.data.locale.[site.active_lang].TITLE -%}
-            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.data.locale.[site.active_lang].TITLE }}</a>
+            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{% if site.default_lang != site.active_lang %}/{{lang}}{%- else -%}/{%- endif -%}">{{ site.data.locale.[site.active_lang].TITLE }}</a>
           {%- endif -%}
         </div>
         {%- if site.search.provider -%}
@@ -22,55 +20,49 @@
       <nav class="navigation">
         <ul class="nav-dropdown">
           {%- for _item in site.data.navigation.header -%}
-            {%- if _item.title.title != blank-%}
-            <!--dropdown-->
-              <!--link in nav bar-->
-              {%- include snippets/get-nav-url.html path=_item.url -%}
-              {%- assign _nav_url = __return -%}
-              {%- include snippets/get-nav-url.html path=page.url -%}
-              {%- assign _page_url = __return -%}
-              {%- if _nav_url == _page_url or page.nav_key and _item.key and page.nav_key == _item.key -%}
-                <li class="navigation__item navigation__item--active"><a>{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
+            {%- if _item.subtitles -%}
+
+              <!--dropdown-->
+              {%- if page.url == _item.url -%}
+                <li class="navigation__item navigation__item--active">
+                  <a>{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}
+                    <img src="/assets/images/icons/menu-arrow.svg"></img>
+                  </a>
+
               {%- else -%}
-                <li class="navigation__item"><a href="{{ _nav_url }}">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
+                <li class="navigation__item">
+                  <a href="{{ _item.url }}">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}
+                    <img src="/assets/images/icons/menu-arrow.svg"></img>
+                  </a>
+
               {%- endif -%}
-              {%- for _subitem in _item.titles -%}
-                <!--link in dropdown-->
+              <ul>
+                {%- for _subitem in _item.subtitles -%}
                   <li>
-                    <a href="">
-                      {{ site.data.locale.[site.active_lang].SWITCHER_MENU_NAME }}
+                    <a href="{{_subitem.url}}">
+                      {{ _subitem.title.[site.active_lang] }}
                     </a>
-                    <ul>
-                {% for lang in site.languages %}
-                  {% if lang != site.active_lang %}
-                        <li>
-                          <a href="{%- if lang != site.default_lang -%}{{site.baseurl}}/{{ lang }}{{page.url}}{%- else -%}{{site.baseurl}}{{page.url}}{%- endif -%}">
-                            <img src="{{site.baseurl}}{{site.data.locale.[lang].ICON_PATH}}">
-                            {{ site.data.locale.[lang].SWITCHER_MENU_NAME }}
-                          </a>
-                        </li>
-                  {% endif %}
-                {% endfor %}
-                    </ul>
                   </li>
-                </ul>
-              </li>
+                {%- endfor -%}
+              </ul>
+                </li>
+            {%- else -%}
+
+              <!--regular link -->
+              {%- if page.url == _item.url -%}
+                <li class="navigation__item navigation__item--active">
+                  <a>{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}</a>
+              
               {%- else -%}
-                <!--regular link-->
-                {%- include snippets/get-nav-url.html path=_item.url -%}
-                {%- assign _nav_url = __return -%}
-                {%- include snippets/get-nav-url.html path=page.url -%}
-                {%- assign _page_url = __return -%}
-                {%- if _nav_url == _page_url or page.nav_key and _item.key and page.nav_key == _item.key -%}
-                  <li class="navigation__item navigation__item--active"><a>{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
-                {%- else -%}
-                  <li class="navigation__item"><a href="{{ _nav_url }}">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
-                {%- endif -%}
-              {%- endfor -%}
+                <li class="navigation__item">
+                  <a href="{{ _item.url }}">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}</a>
+
+              {%- endif -%}
+                </li>
             {%- endif -%}
           {%- endfor -%}
           <!--language switcher-->
-          <li>
+          <li class="language-switcher">
             <span>
               <img src="{{site.data.locale.[site.active_lang].ICON_PATH}}">
               {{ site.data.locale.[site.active_lang].SWITCHER_MENU_NAME }}
