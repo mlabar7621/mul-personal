@@ -9,16 +9,16 @@ $grid-columns: 12;
 
 @mixin make-cell($columns) {
   @if $columns == "auto" {
-    @include flex(1 1 0);
+    flex: 1 1 0;
     width: auto;
   } @else if $columns == "shrink" {
-    @include flex(0 0 auto);
+    flex: 0 0 auto;
     width: auto;
   } @else if $columns == "stretch" {
-    @include flex(1);
+    flex: 1;
   } @else {
-    @include flex(none);
-    width: percentage($columns / $grid-columns);
+    flex: none;
+    width: percentage(calc($columns / $grid-columns));
   }
 }
 
@@ -31,8 +31,8 @@ $grid-columns: 12;
 }
 
 .grid {
-  @include flexbox();
-  @include flex-wrap(wrap);
+  display: flex;
+  flex-wrap: wrap;
   & > {
     @each $breakpoint in map-keys($responsive) {
       @for $i from 1 through $grid-columns {

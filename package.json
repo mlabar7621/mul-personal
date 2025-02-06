@@ -1,21 +1,20 @@
 {
-  "name": "jekyll-text-theme-ml",
+  "name": "jekyll-text-ml",
   "version": "1.0.0",
   "author": "Mikhail Labar",
-  "license": "None",
+  "license": "MIT",
   "keywords": [
     "jekyll",
-    "jekyll-theme",
-    "jekyll-template"
+    "jekyll-theme"
   ],
-  "homepage": "https://github.com/kitian616/jekyll-TeXt-theme",
-  "description": "A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.",
+  "homepage": "https://github.com/mlabar7621/mul-personal",
+  "description": "A customized Jekyll theme derived from TeXt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kitian616/jekyll-TeXt-theme.git"
+    "url": "git+https://github.com/mlabar7621/mul-personal.git"
   },
   "bugs": {
-    "url": "https://github.com/kitian616/jekyll-TeXt-theme/issues"
+    "url": "https://github.com/mlabar7621/mul-personal/issues"
   },
   "scripts": {
     "build": "cross-env JEKYLL_ENV=production bundle exec jekyll build",
@@ -38,7 +37,7 @@
     "eslint-fix": "eslint \"_includes/**/*.js\" --fix",
     "stylelint": "stylelint --syntax scss \"_sass/**/*.scss\"",
     "stylelint-fix": "stylelint --syntax scss \"_sass/**/*.scss\" --fix",
-    "gem-build": "rm -fv jekyll-text-theme-*.gem && gem build jekyll-text-theme.gemspec",
+    "gem-build": "rm -fv jekyll-text-theme-*.gem && gem build jekyll-ml-text.gemspec",
     "gem-push": "gem push jekyll-text-theme-*.gem"
   },
   "devDependencies": {

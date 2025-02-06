@@ -10,7 +10,7 @@ RUN bundle config --global frozen 1
 
 WORKDIR /usr/src/app
 
-COPY Gemfile Gemfile.lock jekyll-text-theme.gemspec ./
+COPY Gemfile Gemfile.lock jekyll-ml-text.gemspec ./
 RUN bundle install
 
 EXPOSE 4000

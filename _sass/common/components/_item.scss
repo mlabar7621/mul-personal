@@ -1,7 +1,7 @@
 .item {
-  @include flexbox();
+  display: flex;
   @include media-breakpoint-down(md) {
-    @include flex-direction(column);
+    flex-direction:column;
   }
 }
 
@@ -21,7 +21,7 @@
 }
 
 .item__content {
-  @include flex(1);
+  flex: 1;
   min-width: 0;
 }
 

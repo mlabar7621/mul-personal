@@ -6,9 +6,9 @@
     @include link-colors($header-text-color, $main-color-1);
   }
   .main {
-    @include flexbox();
+    display: flex;
     @include media-breakpoint-down(md) {
-      @include flex-direction(column);
+      flex-direction: row;
     }
   }
 }
@@ -35,9 +35,9 @@
 
 .header__title {
   @include menu(3, 0);
-  @include align-items(center);
-  @include flex-wrap(nowrap);
-  @include flex(1);
+  align-items: center;
+  flex-wrap: nowrap;
+  flex: 1;
   height: map-get($layout, header-height);
   margin-right: map-get($spacers, 3);
   white-space: nowrap;
@@ -46,7 +46,7 @@
     margin-right: 0;
   }
   & > .header__brand {
-    @include flex(1);
+    flex: 1;
     @include media-breakpoint-down(md) {
       height: map-get($layout, header-height-sm);
     }
@@ -54,15 +54,15 @@
   & > .search-button {
     display: none;
     margin-left: map-get($spacers, 2);
-    @include media-breakpoint-down(md) {
-      @include flexbox();
+    @include media-breakpoint-down(lg) {
+      display: flex;
     }
   }
 }
 
 .header__brand {
-  @include flexbox();
-  @include align-items(center);
+  display: flex;
+  align-items: center;
   & > svg {
     width: map-get($base, font-size-h4) * 1.6;
     height: map-get($base, font-size-h4) * 1.6;
@@ -93,7 +93,7 @@
       margin: -4px 0 0 0;
     }
     @include menu(3, 2, nowrap);
-    @include align-items(center);
+    align-items: center;
     @include media-breakpoint-down(md) {
       height: auto;
     }

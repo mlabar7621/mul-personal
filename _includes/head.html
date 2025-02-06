@@ -2,7 +2,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-{%- include snippets/get-article-title.html article=page -%}
 <title>{{ site.data.locale.[site.active_lang].TITLE }}</title>
 
 <meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">

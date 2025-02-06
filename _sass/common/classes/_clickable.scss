@@ -22,11 +22,11 @@
     $ignore-path: true;
   }
 
-  @include transition(map-get($clickable, transition));
+  transition: map-get($clickable, transition);
   @if $ignore-path == false {
     svg {
       path {
-        @include transition(map-get($clickable, transition));
+        transition: map-get($clickable, transition);
       }
     }
   }

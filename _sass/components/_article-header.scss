@@ -11,7 +11,7 @@
     word-wrap: break-word;
   }
   .split-space {
-    @include user-select(none);
+    user-select: none;
   }
   .edit-on-github {
     text-decoration: none !important;

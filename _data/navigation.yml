@@ -27,7 +27,7 @@ header:
       ru      :       А
       de      :       A
       # @end locale config
-    url: /about.html
+    url: /404.html
     subtitles:
     - title:
         # @start locale config
@@ -55,4 +55,4 @@ header:
         ru      :       А
         de      :       A
         # @end locale config
-      url: /about.html
+      url: /404.html

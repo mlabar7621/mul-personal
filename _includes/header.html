@@ -18,28 +18,33 @@
         {%- endif -%}
       </div>
       <nav class="navigation">
-        <ul class="nav-dropdown">
+        <ul class="nav-pc">
           {%- for _item in site.data.navigation.header -%}
             {%- if _item.subtitles -%}
 
               <!--dropdown-->
               {%- if page.url == _item.url -%}
-                <li class="navigation__item navigation__item--active">
-                  <a>{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}
-                    <img src="/assets/images/icons/menu-arrow.svg"></img>
+                <li class="navigation__item navigation__item--active toggle-menu" onclick="toggleNavPC(this)">
+                  <a class="pc-only">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}
+                    <img class="menu-arrow" src="/assets/images/icons/menu-arrow.svg"></img>
                   </a>
 
               {%- else -%}
-                <li class="navigation__item">
-                  <a href="{{ _item.url }}">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}
-                    <img src="/assets/images/icons/menu-arrow.svg"></img>
+                <li class="navigation__item toggle-menu" onclick="toggleNavPC(this)">
+                  <a href="{{ _item.url }}" class="pc-only">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}
+                    <img class="menu-arrow" src="/assets/images/icons/menu-arrow.svg"></img>
                   </a>
 
               {%- endif -%}
               <ul>
+                <li class="tablet-only">
+                    <a href="{{_item.url}}" class="{%- if page.url == _subitem.url -%}nav-sub-active{%- else -%}nav-sub-link{%- endif -%}">
+                      {{ _item.title.[site.active_lang] }}
+                    </a>
+                  </li>
                 {%- for _subitem in _item.subtitles -%}
                   <li>
-                    <a href="{{_subitem.url}}">
+                    <a href="{{_subitem.url}}" class="{%- if page.url == _subitem.url -%}nav-sub-active{%- else -%}nav-sub-link{%- endif -%}">
                       {{ _subitem.title.[site.active_lang] }}
                     </a>
                   </li>
@@ -62,7 +67,7 @@
             {%- endif -%}
           {%- endfor -%}
           <!--language switcher-->
-          <li class="language-switcher">
+          <li class="language-switcher toggle-menu" onclick="toggleNavPC(this)">
             <span>
               <img src="{{site.data.locale.[site.active_lang].ICON_PATH}}">
               {{ site.data.locale.[site.active_lang].SWITCHER_MENU_NAME }}
@@ -85,5 +90,67 @@
           {%- endif -%}
         </ul>
       </nav>
+      <!--mobile menu-->
+      <div class="hamburger-icon" onclick="toggleNavMobile(this)">
+        <div id="nav-mobile-background"></div>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="nav-mobile">
+          {%- for _item in site.data.navigation.header -%}
+            {%- if _item.subtitles -%}
+              <!--dropdown-->
+              {%- if page.url == _item.url -%}
+                <li>
+                  <a>{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}</a>
+              {%- else -%}
+                <li>
+                  <a href="{{ _item.url }}">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}</a>
+              {%- endif -%}
+              <ul>
+                {%- for _subitem in _item.subtitles -%}
+                  <li>
+                    <a href="{{_subitem.url}}">
+                      {{ _subitem.title.[site.active_lang] }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+                </li>
+            {%- else -%}
+              <!--regular link -->
+              {%- if page.url == _item.url -%}
+                <li>
+                  <a>{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}</a>
+              
+              {%- else -%}
+                <li>
+                  <a href="{{ _item.url }}">{%- if _item.title.[site.active_lang] != blank -%}{{ _item.title.[site.active_lang] }}{%- else -%}{{ _item.url }}{%- endif -%}</a>
+
+              {%- endif -%}
+                </li>
+            {%- endif -%}
+          {%- endfor -%}
+          <!--language switcher-->
+          <li class="language-switcher-mobile">
+            <span>
+              <img src="{{site.data.locale.[site.active_lang].ICON_PATH}}">
+              {{ site.data.locale.[site.active_lang].SWITCHER_MENU_NAME }}
+            </span>
+            <ul>
+              {% for lang in site.languages %}
+                {% if lang != site.active_lang %}
+                <li>
+                  <a {% static_href %}href="{%- if lang != site.default_lang -%}{{site.baseurl}}/{{ lang }}{{page.url}}{%- else -%}{{site.baseurl}}{{page.url}}{%- endif -%}"{% endstatic_href %}>
+                    <img src="{{site.data.locale.[lang].ICON_PATH}}"> <!--set height equivalent to font-size-h4-small-->
+                    {{ site.data.locale.[lang].SWITCHER_MENU_NAME }}
+                  </a>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>

@@ -3,8 +3,8 @@
  */
 
 .footer {
-  @include flexbox();
-  @include align-items(center);
+  display: flex;
+  align-items: center;
   color: $footer-text-color;
   background: $footer-background;
   a {

@@ -3,9 +3,9 @@
     $direction: "horizontal";
   }
   @if $direction == "vertical" {
-    @include flex-direction(column);
+    flex-direction:column;
   } @else {
-    @include flex-direction(row);
+    flex-direction: row;
   }
 }
 
@@ -19,8 +19,8 @@
   @if $wrap == default {
     $wrap: wrap;
   }
-  @include flexbox();
-  @include flex-wrap($wrap);
+  display: flex;
+  flex-wrap: $wrap;
   margin-top: 0;
   margin-bottom: 0;
   & > li {
@@ -39,29 +39,29 @@
 .menu {
   @include menu();
   @include menu-direction();
-  @include align-items(center);
+  align-items: center;
 }
 
 .menu--vertical {
   @include menu-direction("vertical");
-  @include align-items(normal);
+  align-items: normal;
   & > li {
     margin-right: 0;
   }
 }
 
 .menu--inline {
-  @include inline-flex();
+  display: inline-flex;
 }
 
 .menu--center {
-  @include justify-content(center);
+  justify-content:center;
 }
 
 .menu--nowrap {
-  @include flex-wrap(nowrap);
+  flex-wrap: nowrap;
 }
 
 .menu--grow {
-  @include flex-grow(1);
+  flex-grow: 1;
 }

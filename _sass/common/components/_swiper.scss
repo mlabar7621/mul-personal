@@ -9,15 +9,15 @@
 }
 
 .swiper__wrapper {
-  @include flexbox();
+  display: flex;
 }
 
 .swiper__wrapper--animation {
-  @include transition(transform map-get($animation, duration) map-get($animation, timing-function));
+  transition: transform map-get($animation, duration) map-get($animation, timing-function);
 }
 
 .swiper__slide {
-  @include flex-shrink(0);
+  flex-shrink: 0;
   & > img {
     max-width: 100%;
   }
@@ -27,7 +27,7 @@
   position: absolute;
   top: 50%;
   @extend .button, .button--circle;
-  @include transform(translate(0, -50%));
+  transform: translate(0, -50%);
   @include clickable($text-color-d, rgba($main-color-3, .4));
 }
 

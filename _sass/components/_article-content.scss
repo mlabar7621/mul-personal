@@ -135,10 +135,10 @@
             border: none;
           }
           & > tbody {
-            @include flexbox;
+            display: flex;
             & > tr {
               width: 100%;
-              @include flexbox;
+              display: flex;
               & > .code {
                 padding: 0 0 map-get($spacers, 3) map-get($spacers, 2);
                 @include overflow(auto);
@@ -156,7 +156,7 @@
               @include overflow(auto);
               &.lineno {
                 color: $text-color-l;
-                @include user-select(none);
+                user-select: none;
               }
             }
           }

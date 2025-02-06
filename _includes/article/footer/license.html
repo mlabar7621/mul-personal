@@ -1,11 +1,5 @@
-{%- if include.license -%}
+{%-assign _license_name = '<a itemprop="license" rel="license" href="[URL]">[NAME]</a>' | replace: "[URL]", site.data.licenses.[site.license].url | replace: "[NAME]", site.data.licenses.CC-BY-SA-4.0.name -%}
 
-  {%-assign _license_name = '<a itemprop="license" rel="license" href="[URL]">[NAME]</a>' | replace: "[URL]", include.license.url | replace: "[NAME]", include.license.name -%}
-  <div class="license">
-    <p>{{ site.data.locale.[site.active_lang].LICENSE_ANNOUNCE | replace: "[LICENSE]", _license_name }}
-      <a rel="license" href="{{ include.license.url }}">
-        <img alt="{{ include.license.name }}" src="{{ include.license.image }}" />
-      </a>
-    </p>
-  </div>
-{%- endif -%}
+<div class="license">
+  <p>{{ site.data.locale.[site.active_lang].LICENSE_ANNOUNCE | replace: "[LICENSE]", _license_name }}</p>
+</div>

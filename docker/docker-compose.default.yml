@@ -1,13 +1,13 @@
 version: "3.5"
 
 services:
-  jekyll-text-theme_dev:
-    image: docker_jekyll-text-theme_dev
+  jekyll-ml-text_dev:
+    image: docker_jekyll-ml-text_dev
     environment:
       - JEKYLL_ENV
     ports:
       - 4000:4000
-    container_name: jekyll-TeXt-theme_default
+    container_name: jekyll-ml-text_default
     volumes:
       - ..:/usr/src/app
     stdin_open: true

@@ -1,268 +1,153 @@
 /* start custom scss snippet */
 
- @media only screen and (min-width: 1024px) {
-    .nav-dropdown {
-        padding:0 20px
+//flag icons
+.nav-pc img, .nav-mobile img {
+    height: 0.8rem;
+    transition: all .2s cubic-bezier(.2,.3,0,1);
+}
+
+@include media-breakpoint-up(lg){
+    .hamburger-icon{
+        display:none;
     }
 
-    .nav-dropdown li {
-        position: relative;
-        margin-top: 0
+    @media (hover: hover){
+        .tablet-only{
+            display: none;
+        }
     }
 
-    .nav-dropdown li a,.nav-dropdown li span {
-        padding: 20px;
-        line-height: 1;
-        display:block;
-    }
-
-    .nav-dropdown li a svg,.nav-dropdown li span svg {
-        display: inline;
-        height: 15px;
-        vertical-align: middle;
-        margin-left: 8px;
-        fill: $header-background;
-        transition: all .2s cubic-bezier(.2,.3,0,1)
-    }
-
-    .nav-dropdown li a:hover,.nav-dropdown li span:hover,.nav-dropdown li:hover span {
-    }
-
-    .nav-dropdown li:hover span img {
-        transform: translateY(2px)
-    }
-
-    .nav-dropdown li:hover ul {
-        opacity: 1;
-        visibility: visible;
-        transform: translate(0)
-    }
-
-    .nav-dropdown li ul {
-        position: absolute;
-        z-index: 1;
-        top: 52px;
-        left: -10px;
-        list-style: none;
-        margin: 0;
-        padding: 0 0 12px;
-        background: $header-background;
-        border-radius: 0 0 4px 4px;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-8px);
-        transition: all .2s cubic-bezier(.2,.3,0,1);
-    }
-
-    .nav-dropdown li ul li {
-        padding: 0 30px;
-    }
-
-    .nav-dropdown li ul li:first-child {
-        margin-top: -1px
-    }
-
-    .nav-dropdown li ul li a {
-        padding: 12px 0;
-        border-top: 1px solid #262633;
-        white-space: nowrap;
-        text-align: left;
-        vertical-align: middle;
+    .nav-pc {
+        li {
+            position: relative;
+            margin-top: 0;
+            a, span {
+                padding: 1rem;
+                line-height: 1;
+                display:block;
+            }
+            ul {
+                position: absolute;
+                z-index: 1;
+                left: -12px;
+                list-style: none;
+                margin: 0;
+                padding: 0 0 12px;
+                background: $header-background;
+                border-radius: 0 0 4px 4px;
+                visibility: hidden;
+                transform: translateY(-8px);
+                transition: all .2s cubic-bezier(.2,.3,0,1);
+                li {
+                    padding: 0 30px;
+                }
+                li:first-child {
+                    margin-top: -1px
+                }
+                li a {
+                    padding: 12px 0;
+                    border-top: 1px solid $text-color-3;
+                    white-space: nowrap;
+                    text-align: left;
+                    vertical-align: middle;
+                }
+                .nav-sub-link{
+                    color: $text-color-3;
+                }
+                .nav-sub-active{
+                    color: $main-color-1;
+                }
+            }
+            .menu-arrow{
+                vertical-align: bottom;
+                padding-left: 4px;
+            }
+        }
+        li:hover, .open {
+            .menu-arrow {
+                transform: translateY(2px);
+                transition: all .2s cubic-bezier(.2,.3,0,1);
+            }
+            ul {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0)
+            }
+        }
     }
 
     .language-switcher {
         text-align: center;
     }
-
-    //flag icons
-    .nav-dropdown img {
-        height: 0.8rem;
-    }
-
 }
 
-// Begin new code --------------------------------------------------------------
-
-.toggle {
-    position: absolute;
-    z-index: 11;
-    top: 0;
-    right: 0;
-    padding: 25px 20px;
-    cursor: pointer
-}
-
-@media only screen and (min-width: 768px) {
-    .toggle {
-        position:fixed;
-        padding: 35px 30px
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .toggle {
-        display:none
-    }
-}
-
-.toggle:before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    border-radius: 100%;
-    background: #1D1D28
-}
-
-@media only screen and (min-width: 768px) {
-    .toggle:before {
-        top:15px;
-        left: 15px
-    }
-}
-
-.toggle__icon {
-    position: relative;
-    width: 30px;
-    height: 20px
-}
-
-.toggle__icon span,.toggle__icon span:before,.toggle__icon span:after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    border-radius: 2px;
-    transition: all .2s cubic-bezier(.2,.3,0,1);
-}
-
-.toggle__icon span:before {
-    top: -8px
-}
-
-.toggle__icon span:after {
-    top: 8px
-}
-
-@media only screen and (max-width: 1023px) {
-    .nav-over--open {
-        overflow:hidden
+@include media-breakpoint-down(lg){
+    .navigation{
+        display: none;
     }
 
-    .nav-over--open .nav-over {
-        opacity: 1;
-        visibility: visible
-    }
-
-    .nav-over--open .nav-over__list {
-        opacity: 1;
-        visibility: visible;
-        transform: translate(0)
-    }
-
-    .nav-over--open .toggle__icon span:before,.nav-over--open .toggle__icon span:after {
-    }
-
-    .nav-over--open .toggle__icon span {
-        background-color: transparent!important
-    }
-
-    .nav-over--open .toggle__icon span:before,.nav-over--open .toggle__icon span:after {
-        top: 0
-    }
-
-    .nav-over--open .toggle__icon span:before {
-        transform: rotate(45deg)
-    }
-
-    .nav-over--open .toggle__icon span:after {
-        transform: rotate(-45deg)
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    .nav-over {
-        position:fixed;
-        inset: 0;
-        overflow: auto;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .2s cubic-bezier(.2,.3,0,1)
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    .nav-over {
-        position:fixed;
-        top: 0;
-        right: 0;
-        border-radius: 0 0 0 6px
-    }
-}
-
-.nav-over__list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased
-}
-
-@media only screen and (max-width: 1023px) {
-    .nav-over__list {
-        display:block;
-        padding: 40px 0;
-        text-align: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .2s cubic-bezier(.2,.3,0,1);
-        transform: translateY(10px)
-    }
-
-    .nav-over__list li {
-        margin-top: 0
-    }
-
-    .nav-over__list li span {
-        display: block;
-        padding-bottom: 10px;
-        text-transform: uppercase;
-        letter-spacing: .06em;
-    }
-
-    .nav-over__list li span svg {
-        display: none
-    }
-
-    .nav-over__list li a {
-        display: block;
-        padding: 2px 0;
-    }
-
-    .nav-over__list li a strong {
-    }
-
-    .nav-over__list li ul {
+    .nav-mobile, .nav-mobile ul{
         list-style: none;
-        margin: 0 0 20px;
-        padding: 0
     }
 
-    .nav-over__list li ul li a {
+    .hamburger-icon{
+        margin: auto 0;
+        cursor: pointer;
+        z-index: 1;
+        div {
+            width: 35px;
+            height: 3px;
+            background-color: $text-color-3;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
     }
+
+    .open{ 
+        .bar1 {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+        .bar2 {
+            opacity: 0;
+        }
+        .bar3 {
+            transform: rotate(45deg) translate(-6px, -8px);
+        }
+        .nav-mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            padding-left: 15%;
+            justify-content: flex-start;
+        }
+        #nav-mobile-background {
+            display: flex;
+        }
+    }
+    
+    .nav-mobile {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        height: calc(100vh - 50px);
+        width: 100%;
+    }
+
+    #nav-mobile-background{
+        position:fixed;
+        padding:0;
+        margin:0;
+    
+        top:0;
+        left:0;
+    
+        width: 100%;
+        height: 100%;
+        background:$header-background;
+        display: none;
+    }
+
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .nav-over__list li span {
-    }
-
-    .nav-over__list li a {
-    }
-}
-
-
-/* end custom scss snippet */
+// Begin copied code --------------------------------------------------------------
