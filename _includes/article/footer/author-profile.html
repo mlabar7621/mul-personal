@@ -11,8 +11,7 @@
     {%- if _author.url -%}
     <a href="{{ _author.url }}" class="item__image">
     {%- endif -%}
-      {%- include snippets/get-nav-url.html path=_author.avatar -%}
-      {%- assign _author_avatar = __return -%}
+      {%- assign _author_avatar = _author.avatar -%}
       <img class="author-profile__avatar" itemprop="image" src="{{ _author_avatar }}" />
     {%- if _author.url -%}
     </a>

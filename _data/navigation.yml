@@ -17,7 +17,7 @@ header:
       ru      :       А
       de      :       A
       # @end locale config
-    url: /about.html
+    url: /testpage.html
 
   - title:
       # @start locale config

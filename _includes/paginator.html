@@ -30,8 +30,7 @@
         {%- endif -%}
 
         {%- if paginator.previous_page -%}
-          {%- include snippets/prepend-baseurl.html path=paginator.previous_page_path -%}
-          {%- assign _href = __return -%}
+          {%- assign _href = paginator.previous_page_path -%}
           <li><a class="button button--secondary button--circle" href="{{ _href }}">
             <i class="fas fa-angle-left"></i>
           </a></li>
@@ -49,8 +48,7 @@
 
           {%- elsif page == 1 -%}
             {%- assign _home_path = site.paths.home | default: site.data.variables.default.paths.home -%}
-            {%- include snippets/prepend-baseurl.html path=_home_path -%}
-            {%- assign _href = __return -%}
+            {%- assign _href = _home_path -%}
             <li>
               <a class="button button--secondary button--circle" href="{{ _href }}"><span>{{ page }}</span></a>
             </li>
@@ -62,15 +60,13 @@
               {%- elsif page > _n1 and page < _length -%}
                 {%- if page == _length_mimus_one -%}<li><span class="pagination__omit"><i class="fas fa-ellipsis-h"></i></span></li>{%- endif -%}
               {%- else -%}
-                {%- include snippets/prepend-baseurl.html path=site.paginate_path -%}
                 {%- assign _href = __return -%}
                 <li>
                   <a class="button button--secondary button--circle" href="{{ _href | replace: ':num', page }}"><span>{{ page }}</span></a>
                 </li>
               {%- endif -%}
             {%- else -%}
-              {%- include snippets/prepend-baseurl.html path=site.paginate_path -%}
-              {%- assign _href = __return -%}
+              {%- assign _href = site.paginate_path -%}
               <li>
                 <a class="button button--secondary button--circle" href="{{ _href | replace: ':num', page }}"><span>{{ page }}</span></a>
               </li>
@@ -79,8 +75,7 @@
         {%- endfor -%}
 
         {%- if paginator.next_page -%}
-          {%- include snippets/prepend-baseurl.html path=paginator.next_page_path -%}
-          {%- assign _href = __return -%}
+          {%- assign _href = paginator.next_page_path -%}
           <li><a class="button button--secondary button--circle" href="{{ _href }}">
             <i class="fas fa-angle-right"></i>
           </a></li>

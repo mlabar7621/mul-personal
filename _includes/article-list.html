@@ -24,12 +24,10 @@
 
   {%- for _article in _sorted_list -%}
 
-    {%- include snippets/prepend-baseurl.html path=_article.url -%}
-    {%- assign _article_url = __return -%}
+    {%- assign _article_url = _article.url -%}
 
     {%- if _article.cover -%}
-      {%- include snippets/get-nav-url.html path=_article.cover -%}
-      {%- assign _article_cover = __return -%}
+      {%- assign _article_cover = _article.cover -%}
     {%- endif -%}
 
     {%- if include.type == 'item' -%}
@@ -39,8 +37,7 @@
         <article class="item">
       {%- endif -%}
         {%- if _article.cover and include.show_cover-%}
-          {%- include snippets/get-nav-url.html path=_article.cover -%}
-          {%- assign _article_cover = __return -%}
+          {%- assign _article_cover = _article.cover -%}
           <div class="item__image">
           {%- if include.cover_size == 'lg' -%}
             <img class="image image--lg" src="{{ _article_cover }}" />

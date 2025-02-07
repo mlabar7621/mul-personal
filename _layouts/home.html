@@ -1,16 +1,14 @@
 ---
-layout: articles
-show_title: false
-articles:
-  data_source: paginator.posts
-  article_type: BlogPosting
-  show_cover: false
-  show_excerpt: true
-  show_readmore: true
-  show_info: true
+layout: page
 ---
 <div class="layout--home">
-  {%- include paginator.html -%}
+  <div id="home-header">
+    <h1>{{ site.data.page_locale[page.content_locale][site.active_lang].HEADER }}</h1>
+    <p>{{ site.data.page_locale[page.content_locale][site.active_lang].SUBHEADER }}</p>
+  </div>
+  <div class="hero" style="background-image: url(/assets/images/hero/hero_engineer.jpeg);background-color:$main-color-theme-light;"></div>
+  <div></div>
+  <div></div>
 </div>
 <script>
   {%- include scripts/home.js -%}

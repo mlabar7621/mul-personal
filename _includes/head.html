@@ -5,16 +5,14 @@
 <title>{{ site.data.locale.[site.active_lang].TITLE }}</title>
 
 <meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
-<link rel="canonical" href="{%- include snippets/page-url.html -%}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 {%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
-{%- include snippets/get-nav-url.html path=_paths_rss -%}
-<link rel="alternate" type="application/rss+xml" title="{{ site.data.locale.[site.active_lang].TITLE }}" href="{{ __return }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.data.locale.[site.active_lang].TITLE }}" href="{{ _paths_rss }}">
 
 {%- include head/favicon.html -%}
 
-{%- include snippets/prepend-baseurl.html path='/assets/css/main.css' -%}
-<link rel="stylesheet" href="{{ __return }}">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
 {%- include snippets/get-sources.html -%}
 {%- assign _sources = __return -%}

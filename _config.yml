@@ -1,7 +1,7 @@
 ## => Site Settings
 ##############################
-text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+text_skin: default # "default" (default), "dark""
+highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-bright"
 url     : https://mikhail-labar.com
 baseurl : #/mul-personal
 title   : Mikhail Labar
@@ -176,6 +176,9 @@ markdown    : kramdown
 highlighter : rouge
 permalink   : date
 
+include:
+  - _pages
+
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
@@ -196,7 +199,7 @@ exclude:
 
 defaults:
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: article
@@ -206,6 +209,10 @@ defaults:
         toc: true
       show_subscribe: true
       pageview: true
+  - scope:
+      path: "_pages"
+    values:
+      permalink: "/:basename:output_ext"
 
 
 ## => Plugins

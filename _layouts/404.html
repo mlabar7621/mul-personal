@@ -1,12 +1,13 @@
 ---
 layout: page
-title: 404
 show_title: false
 ---
+
 <div class="layout--404">
   <div class="sign">
     <h1>404</h1>
-    <p>Page not found :(</p>
+    <p>{{ site.data.page_locale[ page.content_locale ][ site.active_lang ].SUBTITLE }}</p>
+    <h2>:(</h2>
   </div>
 </div>
 

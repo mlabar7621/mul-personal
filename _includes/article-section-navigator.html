@@ -9,10 +9,8 @@
       {%- if _item.children -%}
 
         {%- for _child in _item.children -%}
-          {%- include snippets/get-nav-url.html path=_child.url -%}
-          {%- assign _nav_url = __return -%}
-          {%- include snippets/get-nav-url.html path=page.url -%}
-          {%- assign _page_url = __return -%}
+          {%- assign _nav_url = _child.url -%}
+          {%- assign _page_url = page.url -%}
 
           {%- if _nav_url == _page_url -%}
             {%- assign _find_cur = true -%}
@@ -37,13 +35,11 @@
 {%- if _next or _previous -%}
   <div class="article__section-navigator clearfix">
     {%- if _previous -%}
-      {%- include snippets/prepend-baseurl.html path=_previous.url -%}
-      {%- assign _href = __return -%}
+      {%- assign _href = _previous.url -%}
       <div class="previous"><span>{{ site.data.locale.[site.active_lang].PREVIOUS }}</span><a href="{{ _href }}">{{ _previous.title }}</a></div>
     {%- endif -%}
     {%- if _next -%}
-      {%- include snippets/prepend-baseurl.html path=_next.url -%}
-      {%- assign _href = __return -%}
+      {%- assign _href = _next.url -%}
       <div class="next"><span>{{ site.data.locale.[site.active_lang].NEXT }}</span><a href="{{ _href }}">{{ _next.title }}</a></div>
     {%- endif -%}
   </div>

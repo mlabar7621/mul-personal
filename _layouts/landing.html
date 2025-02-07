@@ -10,8 +10,7 @@ article_header:
 <div class="layout--landing">
   <div class="heros">
   {%- for _section in page.data.sections -%}
-    {%- include snippets/get-nav-url.html path=_section.background_image.src -%}
-    {%- assign _url = __return -%}
+    {%- assign _url = _section.background_image.src -%}
     {%- if _section.theme == 'light' -%}
       <section class="hero hero--center hero--light" id="hero-{{ forloop.index }}"
     {%- elsif _section.theme == 'dark' -%}
@@ -36,8 +35,7 @@ article_header:
             {%- if _section.actions -%}
               <ul class="menu">
               {%- for _action in _section.actions -%}
-                {%- include snippets/get-nav-url.html path=_action.url -%}
-                {%- assign _url = __return -%}
+                {%- assign _url = _action.url -%}
                 {%- assign _type = _action.type | default: 'outline-info' -%}
                 <li><a class="button button--{{ _type }} button--pill button--lg" href="{{ _url }}">{{ _action.text }}</a></li>
               {%- endfor -%}
@@ -77,8 +75,7 @@ article_header:
                       {%- if child.actions -%}
                         <ul class="menu">
                           {%- for _action in child.actions -%}
-                            {%- include snippets/get-nav-url.html path=_action.url -%}
-                            {%- assign _url = __return -%}
+                            {%- assign _url = _action.url -%}
                             {%- assign _type = _action.type | default: 'outline-info' -%}
                             <li><a class="button button--{{ _type }} button--pill button--lg" href="{{ _url }}">{{ _action.text }}</a></li>
                           {%- endfor -%}
@@ -89,14 +86,12 @@ article_header:
                     {%- if child.image and child.image.src -%}
 
                       {%- if child.image.url -%}
-                        {%- include snippets/get-nav-url.html path=child.image.url -%}
-                        {%- assign _item_image_url = __return -%}
+                        {%- assign _item_image_url = child.image.url -%}
                       {%- else -%}
                         {%- assign _item_image_url = nil -%}
                       {%- endif -%}
 
-                      {%- include snippets/get-nav-url.html path=child.image.src -%}
-                      {%- assign _item_image_src = __return -%}
+                      {%- assign _item_image_src = child.image.src -%}
 
                       {%- if child.image.is_row -%}
                         <div class="mb-5">
@@ -133,14 +128,12 @@ article_header:
           {%- if _section.image and _section.image.src -%}
 
             {%- if _section.image.url -%}
-              {%- include snippets/get-nav-url.html path=_section.image.url -%}
-              {%- assign _section_image_url = __return -%}
+              {%- assign _section_image_url = _section.image.url -%}
             {%- else -%}
               {%- assign _section_image_url = nil -%}
             {%- endif -%}
 
-            {%- include snippets/get-nav-url.html path=_section.image.src -%}
-            {%- assign _section_image_src = __return -%}
+            {%- assign _section_image_src = _section.image.src -%}
 
             {%- if _section.image.is_row -%}
               <div class="mb-5">
