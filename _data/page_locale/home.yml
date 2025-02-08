@@ -1,40 +1,35 @@
 en:
   HEADER:     I am MIKHAIL LABAR
-  SUBHEADER: >  
-    I am a curious, hardworking student looking to learn and experience new things
-    I am always looking for new places to apply my knowledge and skills
+  SUBHEADER1: I am a curious, hardworking student looking to learn and experience new things
+  SUBHEADER2: I am always looking for new places to apply my knowledge and skills
   HERO1:      Engineer
   HERO2:      Creator
   CONTACT:    Get in Touch
 fr:
-  HEADER:     I am MIKHAIL LABAR
-  SUBHEADER: >  
-    I am a curious, hardworking student looking to learn and experience new things
-    I am always looking for new places to apply my knowledge and skills
-  HERO1:      Engineer
-  HERO2:      Creator
-  CONTACT:    Get in Touch
+  HEADER:     Je suis MIKHAIL LABAR
+  SUBHEADER1: Je suis un étudiant curieux et travailleur recherchant des nouveaux choses à apprendre et découvrir
+  SUBHEADER2: Je cherche toujours des nouveaux applications pour mes connaissances et competénces
+  HERO1:      Ingénieur
+  HERO2:      Créateur
+  CONTACT:    Contactez-moi
 ru:
   HEADER:     I am MIKHAIL LABAR
-  SUBHEADER: >  
-    I am a curious, hardworking student looking to learn and experience new things
-    I am always looking for new places to apply my knowledge and skills
+  SUBHEADER1: I am a curious, hardworking student looking to learn and experience new things
+  SUBHEADER2: I am always looking for new places to apply my knowledge and skills
   HERO1:      Engineer
   HERO2:      Creator
   CONTACT:    Get in Touch
 be:
   HEADER:     I am MIKHAIL LABAR
-  SUBHEADER: >  
-    I am a curious, hardworking student looking to learn and experience new things
-    I am always looking for new places to apply my knowledge and skills
+  SUBHEADER1: I am a curious, hardworking student looking to learn and experience new things
+  SUBHEADER2: I am always looking for new places to apply my knowledge and skills
   HERO1:      Engineer
   HERO2:      Creator
   CONTACT:    Get in Touch
 de:
-  HEADER:     I am MIKHAIL LABAR
-  SUBHEADER: >  
-    I am a curious, hardworking student looking to learn and experience new things
-    I am always looking for new places to apply my knowledge and skills
-  HERO1:      Engineer
-  HERO2:      Creator
-  CONTACT:    Get in Touch
+  HEADER:     Ich bin MIKHAIL LABAR
+  SUBHEADER1: Ich bin ein neugierige, fließig Student, der sucht neue Erfahrungen
+  SUBHEADER2: Ich suche immer neue Situationen, wo ich meinen Wissen und Fähigkeiten anwenden kann
+  HERO1:      Ingenieur
+  HERO2:      Bildner
+  CONTACT:    Kontaktier Mich

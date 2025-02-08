@@ -1,0 +1,35 @@
+en:
+  HEADER: Certifications
+  CERTIFICATIONS:
+    - TITLE:  HAM Radio Technician License
+      DATE:   2024
+    - TITLE:  Certified Solidworks Associate (CSWA)
+      DATE:   2024
+fr:
+    HEADER: Certifications
+    CERTIFICATIONS:
+    - TITLE:  License de Technicien Radio Amateur
+      DATE:   2024
+    - TITLE:  Associé Certifié de Solidworks (CSWA)
+      DATE:   2024
+ru:
+    HEADER: Certifications
+    CERTIFICATIONS:
+    - TITLE:  HAM Radio Technician License
+      DATE:   2024
+    - TITLE:  Certified Solidworks Associate (CSWA)
+      DATE:   2024
+be:
+    HEADER: Certifications
+    CERTIFICATIONS:
+    - TITLE:  HAM Radio Technician License
+      DATE:   2024
+    - TITLE:  Certified Solidworks Associate (CSWA)
+      DATE:   2024
+de:
+    HEADER: Zertifikate
+    CERTIFICATIONS:
+    - TITLE:  Amateurfunktechniker-Lizenz
+      DATE:   2024
+    - TITLE:  Zertifizierter SolidWorks-Mitarbeitere (CSWA)
+      DATE:   2024

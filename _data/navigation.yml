@@ -1,58 +1,49 @@
 header:
   - title:
       # @start locale config
-      en      :       Archive
-      fr      :       Archives
-      be      :       А
-      ru      :       А
-      de      :       
+      en      :       Resume
+      fr      :       Résumé
+      be      :       Рэзюмэ
+      ru      :       Резюме
+      de      :       Lebenslauf
       # @end locale config
-    url: /archive.html
+    url: /resume.html
 
   - title:
       # @start locale config
       en      :       About
       fr      :       À propos
-      be      :       А
-      ru      :       А
-      de      :       A
+      be      :       Пра Мяне
+      ru      :       Обо Мне
+      de      :       Über Mich
       # @end locale config
-    url: /testpage.html
-
-  - title:
-      # @start locale config
-      en      :       About
-      fr      :       À propos
-      be      :       А
-      ru      :       А
-      de      :       A
-      # @end locale config
-    url: /404.html
+    url: /about.html
     subtitles:
     - title:
         # @start locale config
-        en      :       My Story
-        fr      :       À propos
-        be      :       А
-        ru      :       А
-        de      :       A
+        en      :       Portfolio
+        fr      :       Portfolio
+        be      :       Партфоліё
+        ru      :       Портфолио
+        de      :       Portfolio
         # @end locale config
-      url: /about.html
+      url: /portfolio.html
     - title:
         # @start locale config
         en      :       Certifications
-        fr      :       À propos
-        be      :       А
-        ru      :       А
-        de      :       A
+        fr      :       Certifications
+        be      :       Сертыфікаты
+        ru      :       Сертификаты
+        de      :       Zertifikate
         # @end locale config
-      url: /about.html
-    - title:
-        # @start locale config
-        en      :       Knives
-        fr      :       À propos
-        be      :       А
-        ru      :       А
-        de      :       A
-        # @end locale config
-      url: /404.html
+      url: /certifications.html
+
+  - title:
+      # @start locale config
+      en      :       Contact
+      fr      :       Contact
+      be      :       Кантакт
+      ru      :       Контакт
+      de      :       Kontakt
+      # @end locale config
+    url: /contact.html

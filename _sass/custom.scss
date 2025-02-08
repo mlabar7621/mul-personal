@@ -150,4 +150,75 @@
 
 }
 
+.resume-left {
+    display: inline-block;
+    text-align: left;
+    margin: 1px auto 1px 0;
+}
+
+.resume-right {
+    display: inline-flex;
+    text-align: right;
+    margin: 1px 0 1px auto;
+}
+
+.resume-line {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+    @include media-breakpoint-down(md) {
+        font-size: map-get($base, font-size-sm);
+    }
+}
+
+hr.resume-divider {
+    border-top: 2px solid #333333;
+    margin: 0 auto;
+}
+
+@include media-breakpoint-down(md) {
+    .home-header {
+        p {
+            font-size: 4vw;
+        }
+        h1 {
+            font-size: 7vw;
+        }
+    }
+}
+
+.home-header p {
+
+}
+
+.home-hero-image {
+    background-color: $main-color-theme-light;
+    justify-content: center;
+    position: absolute;
+    width: 105%;
+    margin: -5px;
+    left: 0;
+    height: 22rem;
+    filter: brightness(20%);
+    z-index: 1;
+}
+
+.home-hero {
+    height: 22rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        color: $text-color-1;
+    }
+}
+
 // Begin copied code --------------------------------------------------------------

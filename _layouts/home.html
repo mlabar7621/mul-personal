@@ -2,11 +2,19 @@
 layout: page
 ---
 <div class="layout--home">
-  <div id="home-header">
+  <div class="home-header">
     <h1>{{ site.data.page_locale[page.content_locale][site.active_lang].HEADER }}</h1>
-    <p>{{ site.data.page_locale[page.content_locale][site.active_lang].SUBHEADER }}</p>
+    <p>{{ site.data.page_locale[page.content_locale][site.active_lang].SUBHEADER1 }}</p>
+    <p>{{ site.data.page_locale[page.content_locale][site.active_lang].SUBHEADER2 }}</p>
   </div>
-  <div class="hero" style="background-image: url(/assets/images/hero/hero_engineer.jpeg);background-color:$main-color-theme-light;"></div>
+  <div class="home-hero">
+    <img class="home-hero-image" src="/assets/images/hero/hero_engineer.jpeg">
+    <h2>{{ site.data.page_locale[page.content_locale][site.active_lang].HERO1 }}</h2>
+  </div>
+  <div class="home-hero">
+    <img class="home-hero-image" src="/assets/images/hero/hero_engineer.jpeg">
+    <h2>{{ site.data.page_locale[page.content_locale][site.active_lang].HERO2 }}</h2>
+  </div>
   <div></div>
   <div></div>
 </div>
