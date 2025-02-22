@@ -1,4 +1,4 @@
-{%- assign _author = include.author -%}
+{%- assign _author = site.author -%}
 
 <div class="author-links">
   <ul class="menu menu--nowrap menu--inline">
@@ -8,10 +8,10 @@
     {%- endif -%}
 
     {%- if _author.type == 'organization' -%}
-      {%- assign _locale_string_email = site.data.locale.[site.active_lang].EMAIL_US}
+      {%- assign _locale_string_email = site.data.locale.[site.active_lang].EMAIL_US -%}
       {%- assign _locale_string_follow = site.data.locale.[site.active_lang].FOLLOW_US -%}
     {%- else -%}
-      {%- assign _locale_string_email = site.data.locale.[site.active_lang].EMAIL_ME}
+      {%- assign _locale_string_email = site.data.locale.[site.active_lang].EMAIL_ME -%}
       {%- assign _locale_string_follow = site.data.locale.[site.active_lang].FOLLOW_ME -%}
     {%- endif -%}
 
@@ -22,6 +22,14 @@
       </a>
     {%- endif -%}
 
+
+    {%- if _author.instagram -%}
+      <li title="{{ _locale_string_follow | replace: '[NAME]', 'Instagram' }}">
+        <a class="button button--circle instagram-button" itemprop="sameAs" href="https://www.instagram.com/{{ _author.instagram }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/instagram.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
 
     {%- if _author.facebook -%}
       <li title="{{ _locale_string_follow | replace: '[NAME]', 'Facebook' }}">
@@ -107,6 +115,14 @@
       <li title="{{ _locale_string_follow | replace: '[NAME]', 'npm' }}">
         <a class="button button--circle npm-button" itemprop="sameAs" href="https://www.npmjs.com/~{{ _author.npm }}" target="_blank">
           <div class="icon">{%- include svg/icon/social/npm.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+
+    {%- if _author.whatsapp -%}
+      <li title="{{ _locale_string_follow | replace: '[NAME]', 'whatsapp' }}">
+        <a class="button button--circle whatsapp-button" itemprop="sameAs" href="{{ site.url }}/assets/images/whatsapp.jpg" target="_blank">
+          <div class="icon">{%- include svg/icon/social/whatsapp.svg -%}</div>
         </a>
       </li>
     {%- endif -%}

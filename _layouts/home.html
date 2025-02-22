@@ -7,16 +7,18 @@ layout: page
     <p>{{ site.data.page_locale[page.content_locale][site.active_lang].SUBHEADER1 }}</p>
     <p>{{ site.data.page_locale[page.content_locale][site.active_lang].SUBHEADER2 }}</p>
   </div>
+
   <div class="home-hero">
     <img class="home-hero-image" src="/assets/images/hero/hero_engineer.jpeg">
-    <h2>{{ site.data.page_locale[page.content_locale][site.active_lang].HERO1 }}</h2>
+    <a>{{ site.data.page_locale[page.content_locale][site.active_lang].HERO1 }}</a>
   </div>
   <div class="home-hero">
-    <img class="home-hero-image" src="/assets/images/hero/hero_engineer.jpeg">
-    <h2>{{ site.data.page_locale[page.content_locale][site.active_lang].HERO2 }}</h2>
+    <img class="home-hero-image" src="/assets/images/hero/hero_landscape.jpg">
+    <a>{{ site.data.page_locale[page.content_locale][site.active_lang].HERO2 }}</a>
   </div>
-  <div></div>
-  <div></div>
+  <div class="home-contact">
+    <a href="/contact.html">{{ site.data.page_locale[page.content_locale][site.active_lang].CONTACT }}</a>
+  </div>
 </div>
 <script>
   {%- include scripts/home.js -%}

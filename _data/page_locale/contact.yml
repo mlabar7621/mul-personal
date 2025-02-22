@@ -1,0 +1,50 @@
+en:
+  title: Contact Me
+  services:
+    email:      Email
+    instagram:  Instagram
+    linkedin:   Linkedin
+    whatsapp:   Whatsapp
+    telegram:   Telegram
+    facebook:   Facebook
+    github:     Github
+fr:
+  title: Contactez-moi
+  services:
+    email:      Email
+    instagram:  Instagram
+    linkedin:   Linkedin
+    whatsapp:   Whatsapp
+    telegram:   Telegram
+    facebook:   Facebook
+    github:     Github
+ru:
+  title: Свяжитесь Со Мной
+  services:
+    email:      Email
+    instagram:  Instagram
+    linkedin:   Linkedin
+    whatsapp:   Whatsapp
+    telegram:   Telegram
+    facebook:   Facebook
+    github:     Github
+be:
+  title: Звязацца Са Мной
+  services:
+    email:      Email
+    instagram:  Instagram
+    linkedin:   Linkedin
+    whatsapp:   Whatsapp
+    telegram:   Telegram
+    facebook:   Facebook
+    github:     Github
+de:
+  title: Kontaktieren Sie Mich
+  services:
+    email:      Email
+    instagram:  Instagram
+    linkedin:   Linkedin
+    whatsapp:   Whatsapp
+    telegram:   Telegram
+    facebook:   Facebook
+    github:     Github

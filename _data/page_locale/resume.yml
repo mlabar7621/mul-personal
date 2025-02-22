@@ -1,0 +1,385 @@
+en:
+  HEADER: Mikhail Labar
+  SECTIONS:
+  - TITLE:         Education
+    POSITIONS:
+    - COMPANY:      University of Maryland, College Park
+      DATE-START:   September 2023
+      DATE-END:     Present
+      POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
+  - TITLE:         Skills
+    POSITIONS:
+    - COMPANY:      Programming Languages
+      DESCRIPTION:  
+      - C#, C++, Java, JS, Ruby, MATLAB, Python, HTML, CSS, Liquid
+    - COMPANY:      Software
+      DESCRIPTION:  
+      - Solidworks, Autodesk Fusion, Adobe Premiere Pro, Adobe Photoshop, Linux
+    - COMPANY:      Manufacturing
+      DESCRIPTION:  
+      - Soldering, 3D Printing, Laser Cutting, Photolithography, CNC machining, Woodworking
+    - COMPANY:      Artificial Intelligence
+      DESCRIPTION:  
+      - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
+    - COMPANY:      Languages
+      DESCRIPTION:  
+      - Russian, Belarusian, French, German
+    - COMPANY:      Soft Skills
+      DESCRIPTION:  
+      - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
+  - TITLE:         Experience
+    POSITIONS:
+    - COMPANY:      Dean's Student Advisory Council, Clark School of Engineering
+      DATE-START:   May 2024
+      DATE-END:     December 2024
+      POSITION:     Member
+      DESCRIPTION:
+      - Created agendas and schedules for meetings between students and faculty to tackle school issues
+      - Proposed and initiated efforts to improve conditions for students and organizations
+    - COMPANY:      Dining Services Advisory Board, UMD RHA
+      DATE-START:   February 2024
+      DATE-END:     December 2024
+      POSITION:     Coordinator
+      DESCRIPTION:
+      - Organized and scheduled weekly meetings between dining services management and student representatives to discuss on-campus issues
+      - Outlined, proposed, and implemented multiple community-building efforts on campus
+    - COMPANY:      MEMS and Microfluidics Laboratory (MML), UMD
+      DATE-START:   February 2024
+      DATE-END:     November 2024
+      POSITION:     Undergraduate Researcher
+      DESCRIPTION:
+      - Participated in the creation of a small-scale lab device for blood sepsis detection
+      - Manufactured PZT crystals into piezo elements using powder blasting techniques
+      - Worked in BSL2 lab and cleanroom settings, followed accompanying safety procedures
+    - COMPANY:      Mechanical Contractors Association of America (MCAA)
+      DATE-START:   September 2023
+      DATE-END:     May 2024
+      POSITION:     Project Team Member
+      DESCRIPTION:
+      - Created a mock project bid for a commercial HVAC renovation project
+      - Analyzed engineering drawings to create project takeoffs
+      - Created Gantt charts for project scheduling
+      - Placed 9th in the country
+    - COMPANY:      University of Maryland Over Terrain Vehicle Project
+      DATE-START:   January 2024
+      DATE-END:     May 2024
+      POSITION:     Team Lead
+      DESCRIPTION:
+      - Designed, manufactured, and programmed an autonomously navigating vehicle capable of object recognition through machine learning using Torch AI library
+      - Modeled, Laser cut, and 3D printed low-tolerance custom components for the vehicle
+      - Recognized nationally at conference on integrating AI into higher education
+    - COMPANY:      First Person View Drone Build Project
+      DATE-START:   May 2024
+      DATE-END:     August 2024
+      POSITION:     Builder, Pilot
+      DESCRIPTION:
+      - Designed, built, and configured drone to receive radio controls and transmit live video
+      - Designed and 3D printed camera mount for filming cinematic shots
+fr:
+  HEADER: Mikhail Labar
+  SECTIONS:
+  - TITLE:         Education
+    POSITIONS:
+    - COMPANY:      University of Maryland, College Park
+      DATE-START:   September 2023
+      DATE-END:     Present
+      POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
+  - TITLE:         Skills
+    POSITIONS:
+    - COMPANY:      Programming Languages
+      DESCRIPTION:  
+      - C#, C++, Java, JS, Ruby, MATLAB, Python, HTML, CSS, Liquid
+    - COMPANY:      Software
+      DESCRIPTION:  
+      - Solidworks, Autodesk Fusion, Adobe Premiere Pro, Adobe Photoshop, Linux
+    - COMPANY:      Manufacturing
+      DESCRIPTION:  
+      - Soldering, 3D Printing, Laser Cutting, Photolithography, CNC machining, Woodworking
+    - COMPANY:      Artificial Intelligence
+      DESCRIPTION:  
+      - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
+    - COMPANY:      Languages
+      DESCRIPTION:  
+      - Russian, Belarusian, French, German
+    - COMPANY:      Soft Skills
+      DESCRIPTION:  
+      - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
+  - TITLE:         Experience
+    POSITIONS:
+    - COMPANY:      Dean's Student Advisory Council, Clark School of Engineering
+      DATE-START:   May 2024
+      DATE-END:     December 2024
+      POSITION:     Member
+      DESCRIPTION:
+      - Created agendas and schedules for meetings between students and faculty to tackle school issues
+      - Proposed and initiated efforts to improve conditions for students and organizations
+    - COMPANY:      Dining Services Advisory Board, UMD RHA
+      DATE-START:   February 2024
+      DATE-END:     December 2024
+      POSITION:     Coordinator
+      DESCRIPTION:
+      - Organized and scheduled weekly meetings between dining services management and student representatives to discuss on-campus issues
+      - Outlined, proposed, and implemented multiple community-building efforts on campus
+    - COMPANY:      MEMS and Microfluidics Laboratory (MML), UMD
+      DATE-START:   February 2024
+      DATE-END:     November 2024
+      POSITION:     Undergraduate Researcher
+      DESCRIPTION:
+      - Participated in the creation of a small-scale lab device for blood sepsis detection
+      - Manufactured PZT crystals into piezo elements using powder blasting techniques
+      - Worked in BSL2 lab and cleanroom settings, followed accompanying safety procedures
+    - COMPANY:      Mechanical Contractors Association of America (MCAA)
+      DATE-START:   September 2023
+      DATE-END:     May 2024
+      POSITION:     Project Team Member
+      DESCRIPTION:
+      - Created a mock project bid for a commercial HVAC renovation project
+      - Analyzed engineering drawings to create project takeoffs
+      - Created Gantt charts for project scheduling
+      - Placed 9th in the country
+    - COMPANY:      University of Maryland Over Terrain Vehicle Project
+      DATE-START:   January 2024
+      DATE-END:     May 2024
+      POSITION:     Team Lead
+      DESCRIPTION:
+      - Designed, manufactured, and programmed an autonomously navigating vehicle capable of object recognition through machine learning using Torch AI library
+      - Modeled, Laser cut, and 3D printed low-tolerance custom components for the vehicle
+      - Recognized nationally at conference on integrating AI into higher education
+    - COMPANY:      First Person View Drone Build Project
+      DATE-START:   May 2024
+      DATE-END:     August 2024
+      POSITION:     Builder, Pilot
+      DESCRIPTION:
+      - Designed, built, and configured drone to receive radio controls and transmit live video
+      - Designed and 3D printed camera mount for filming cinematic shots
+ru:
+  HEADER: Mikhail Labar
+  SECTIONS:
+  - TITLE:         Education
+    POSITIONS:
+    - COMPANY:      University of Maryland, College Park
+      DATE-START:   September 2023
+      DATE-END:     Present
+      POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
+  - TITLE:         Skills
+    POSITIONS:
+    - COMPANY:      Programming Languages
+      DESCRIPTION:  
+      - C#, C++, Java, JS, Ruby, MATLAB, Python, HTML, CSS, Liquid
+    - COMPANY:      Software
+      DESCRIPTION:  
+      - Solidworks, Autodesk Fusion, Adobe Premiere Pro, Adobe Photoshop, Linux
+    - COMPANY:      Manufacturing
+      DESCRIPTION:  
+      - Soldering, 3D Printing, Laser Cutting, Photolithography, CNC machining, Woodworking
+    - COMPANY:      Artificial Intelligence
+      DESCRIPTION:  
+      - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
+    - COMPANY:      Languages
+      DESCRIPTION:  
+      - Russian, Belarusian, French, German
+    - COMPANY:      Soft Skills
+      DESCRIPTION:  
+      - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
+  - TITLE:         Experience
+    POSITIONS:
+    - COMPANY:      Dean's Student Advisory Council, Clark School of Engineering
+      DATE-START:   May 2024
+      DATE-END:     December 2024
+      POSITION:     Member
+      DESCRIPTION:
+      - Created agendas and schedules for meetings between students and faculty to tackle school issues
+      - Proposed and initiated efforts to improve conditions for students and organizations
+    - COMPANY:      Dining Services Advisory Board, UMD RHA
+      DATE-START:   February 2024
+      DATE-END:     December 2024
+      POSITION:     Coordinator
+      DESCRIPTION:
+      - Organized and scheduled weekly meetings between dining services management and student representatives to discuss on-campus issues
+      - Outlined, proposed, and implemented multiple community-building efforts on campus
+    - COMPANY:      MEMS and Microfluidics Laboratory (MML), UMD
+      DATE-START:   February 2024
+      DATE-END:     November 2024
+      POSITION:     Undergraduate Researcher
+      DESCRIPTION:
+      - Participated in the creation of a small-scale lab device for blood sepsis detection
+      - Manufactured PZT crystals into piezo elements using powder blasting techniques
+      - Worked in BSL2 lab and cleanroom settings, followed accompanying safety procedures
+    - COMPANY:      Mechanical Contractors Association of America (MCAA)
+      DATE-START:   September 2023
+      DATE-END:     May 2024
+      POSITION:     Project Team Member
+      DESCRIPTION:
+      - Created a mock project bid for a commercial HVAC renovation project
+      - Analyzed engineering drawings to create project takeoffs
+      - Created Gantt charts for project scheduling
+      - Placed 9th in the country
+    - COMPANY:      University of Maryland Over Terrain Vehicle Project
+      DATE-START:   January 2024
+      DATE-END:     May 2024
+      POSITION:     Team Lead
+      DESCRIPTION:
+      - Designed, manufactured, and programmed an autonomously navigating vehicle capable of object recognition through machine learning using Torch AI library
+      - Modeled, Laser cut, and 3D printed low-tolerance custom components for the vehicle
+      - Recognized nationally at conference on integrating AI into higher education
+    - COMPANY:      First Person View Drone Build Project
+      DATE-START:   May 2024
+      DATE-END:     August 2024
+      POSITION:     Builder, Pilot
+      DESCRIPTION:
+      - Designed, built, and configured drone to receive radio controls and transmit live video
+      - Designed and 3D printed camera mount for filming cinematic shots
+be:
+  HEADER: Mikhail Labar
+  SECTIONS:
+  - TITLE:         Education
+    POSITIONS:
+    - COMPANY:      University of Maryland, College Park
+      DATE-START:   September 2023
+      DATE-END:     Present
+      POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
+  - TITLE:         Skills
+    POSITIONS:
+    - COMPANY:      Programming Languages
+      DESCRIPTION:  
+      - C#, C++, Java, JS, Ruby, MATLAB, Python, HTML, CSS, Liquid
+    - COMPANY:      Software
+      DESCRIPTION:  
+      - Solidworks, Autodesk Fusion, Adobe Premiere Pro, Adobe Photoshop, Linux
+    - COMPANY:      Manufacturing
+      DESCRIPTION:  
+      - Soldering, 3D Printing, Laser Cutting, Photolithography, CNC machining, Woodworking
+    - COMPANY:      Artificial Intelligence
+      DESCRIPTION:  
+      - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
+    - COMPANY:      Languages
+      DESCRIPTION:  
+      - Russian, Belarusian, French, German
+    - COMPANY:      Soft Skills
+      DESCRIPTION:  
+      - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
+  - TITLE:         Experience
+    POSITIONS:
+    - COMPANY:      Dean's Student Advisory Council, Clark School of Engineering
+      DATE-START:   May 2024
+      DATE-END:     December 2024
+      POSITION:     Member
+      DESCRIPTION:
+      - Created agendas and schedules for meetings between students and faculty to tackle school issues
+      - Proposed and initiated efforts to improve conditions for students and organizations
+    - COMPANY:      Dining Services Advisory Board, UMD RHA
+      DATE-START:   February 2024
+      DATE-END:     December 2024
+      POSITION:     Coordinator
+      DESCRIPTION:
+      - Organized and scheduled weekly meetings between dining services management and student representatives to discuss on-campus issues
+      - Outlined, proposed, and implemented multiple community-building efforts on campus
+    - COMPANY:      MEMS and Microfluidics Laboratory (MML), UMD
+      DATE-START:   February 2024
+      DATE-END:     November 2024
+      POSITION:     Undergraduate Researcher
+      DESCRIPTION:
+      - Participated in the creation of a small-scale lab device for blood sepsis detection
+      - Manufactured PZT crystals into piezo elements using powder blasting techniques
+      - Worked in BSL2 lab and cleanroom settings, followed accompanying safety procedures
+    - COMPANY:      Mechanical Contractors Association of America (MCAA)
+      DATE-START:   September 2023
+      DATE-END:     May 2024
+      POSITION:     Project Team Member
+      DESCRIPTION:
+      - Created a mock project bid for a commercial HVAC renovation project
+      - Analyzed engineering drawings to create project takeoffs
+      - Created Gantt charts for project scheduling
+      - Placed 9th in the country
+    - COMPANY:      University of Maryland Over Terrain Vehicle Project
+      DATE-START:   January 2024
+      DATE-END:     May 2024
+      POSITION:     Team Lead
+      DESCRIPTION:
+      - Designed, manufactured, and programmed an autonomously navigating vehicle capable of object recognition through machine learning using Torch AI library
+      - Modeled, Laser cut, and 3D printed low-tolerance custom components for the vehicle
+      - Recognized nationally at conference on integrating AI into higher education
+    - COMPANY:      First Person View Drone Build Project
+      DATE-START:   May 2024
+      DATE-END:     August 2024
+      POSITION:     Builder, Pilot
+      DESCRIPTION:
+      - Designed, built, and configured drone to receive radio controls and transmit live video
+      - Designed and 3D printed camera mount for filming cinematic shots
+de:
+  HEADER: Mikhail Labar
+  SECTIONS:
+  - TITLE:         Education
+    POSITIONS:
+    - COMPANY:      University of Maryland, College Park
+      DATE-START:   September 2023
+      DATE-END:     Present
+      POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
+  - TITLE:         Skills
+    POSITIONS:
+    - COMPANY:      Programming Languages
+      DESCRIPTION:  
+      - C#, C++, Java, JS, Ruby, MATLAB, Python, HTML, CSS, Liquid
+    - COMPANY:      Software
+      DESCRIPTION:  
+      - Solidworks, Autodesk Fusion, Adobe Premiere Pro, Adobe Photoshop, Linux
+    - COMPANY:      Manufacturing
+      DESCRIPTION:  
+      - Soldering, 3D Printing, Laser Cutting, Photolithography, CNC machining, Woodworking
+    - COMPANY:      Artificial Intelligence
+      DESCRIPTION:  
+      - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
+    - COMPANY:      Languages
+      DESCRIPTION:  
+      - Russian, Belarusian, French, German
+    - COMPANY:      Soft Skills
+      DESCRIPTION:  
+      - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
+  - TITLE:         Experience
+    POSITIONS:
+    - COMPANY:      Dean's Student Advisory Council, Clark School of Engineering
+      DATE-START:   May 2024
+      DATE-END:     December 2024
+      POSITION:     Member
+      DESCRIPTION:
+      - Created agendas and schedules for meetings between students and faculty to tackle school issues
+      - Proposed and initiated efforts to improve conditions for students and organizations
+    - COMPANY:      Dining Services Advisory Board, UMD RHA
+      DATE-START:   February 2024
+      DATE-END:     December 2024
+      POSITION:     Coordinator
+      DESCRIPTION:
+      - Organized and scheduled weekly meetings between dining services management and student representatives to discuss on-campus issues
+      - Outlined, proposed, and implemented multiple community-building efforts on campus
+    - COMPANY:      MEMS and Microfluidics Laboratory (MML), UMD
+      DATE-START:   February 2024
+      DATE-END:     November 2024
+      POSITION:     Undergraduate Researcher
+      DESCRIPTION:
+      - Participated in the creation of a small-scale lab device for blood sepsis detection
+      - Manufactured PZT crystals into piezo elements using powder blasting techniques
+      - Worked in BSL2 lab and cleanroom settings, followed accompanying safety procedures
+    - COMPANY:      Mechanical Contractors Association of America (MCAA)
+      DATE-START:   September 2023
+      DATE-END:     May 2024
+      POSITION:     Project Team Member
+      DESCRIPTION:
+      - Created a mock project bid for a commercial HVAC renovation project
+      - Analyzed engineering drawings to create project takeoffs
+      - Created Gantt charts for project scheduling
+      - Placed 9th in the country
+    - COMPANY:      University of Maryland Over Terrain Vehicle Project
+      DATE-START:   January 2024
+      DATE-END:     May 2024
+      POSITION:     Team Lead
+      DESCRIPTION:
+      - Designed, manufactured, and programmed an autonomously navigating vehicle capable of object recognition through machine learning using Torch AI library
+      - Modeled, Laser cut, and 3D printed low-tolerance custom components for the vehicle
+      - Recognized nationally at conference on integrating AI into higher education
+    - COMPANY:      First Person View Drone Build Project
+      DATE-START:   May 2024
+      DATE-END:     August 2024
+      POSITION:     Builder, Pilot
+      DESCRIPTION:
+      - Designed, built, and configured drone to receive radio controls and transmit live video
+      - Designed and 3D printed camera mount for filming cinematic shots
