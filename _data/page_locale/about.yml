@@ -9,18 +9,42 @@ en:
     - >
       In my free time, I do woodwork and metalwork. I also cycle, rock climb, and hike.
 fr:
-  para1:
-  para2:
-  para3:
+  title: À Propos de Moi
+  paras:
+    - >
+      Je m'appelle Mikhail Labar et je suis étudiant à l'Université du Maryland, College Park,
+      où j'étudie l'ingénierie mécanique et la gestion d'entreprise.
+    - >
+      Actuellement, j'étudie à la Hochschule München à Munich, en Allemagne.
+    - >
+      Pendant mes temps libre, je fais du travail du bois et du métal. Je fais aussi du vélo, de l'escalade et de la randonnée.
 ru:
-  para1:
-  para2:
-  para3:
+  title: Обо Мне
+  paras:
+    - >
+      Меня зовут Михаил Лабар, я студент Мэрилендского университета в Колледж-Парке,
+      где я изучаю машиностроение и управление бизнесом.
+    - >
+      В настоящее время я учусь в Hochschule München в Мюнхене, Германия.
+    - >
+      В свободное время я занимаюсь столярным и металлическим трудом. Также я катаюсь на велосипеде, лазаю по скалам и хожу в походы.
 be:
-  para1:
-  para2:
-  para3:
+  title: Пра Мяне
+  paras:
+    - >
+      Мяне завуць Міхаіл Лабар, я студэнт Універсітэта штата Мэрыленд, Каледж Парк,
+      дзе я вывучаю машынабудаванне і кіраванне бізнесам.
+    - >
+      У цяперашні час я вучуся ў Hochschule München у Мюнхене, Германія.
+    - >
+      У вольны час займаюся сталярнай і слясарнай працай. Я таксама катаюся на ровары, лажу на скалы і хаджу ў паход.
 de:
-  para1:
-  para2:
-  para3:
+  title: Über Mich
+  paras:
+    - >
+      Mein Name ist Mikhail Labar und ich bin Student an der University of Maryland, College Park,
+      wo ich Maschinenbau und Betriebswirtschaft studiere.
+    - >
+      Zurzeit studiere ich an der Hochschule München in München, Deutschland.
+    - >
+      In meiner Freizeit beschäftige ich mich mit Holz- und Metallarbeiten. Außerdem fahre ich Rad, klettere und wandere.

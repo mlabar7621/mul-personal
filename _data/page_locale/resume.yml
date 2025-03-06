@@ -1,13 +1,13 @@
 en:
   HEADER: Mikhail Labar
   SECTIONS:
-  - TITLE:         Education
+  - TITLE:          Education
     POSITIONS:
     - COMPANY:      University of Maryland, College Park
       DATE-START:   September 2023
       DATE-END:     Present
       POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
-  - TITLE:         Skills
+  - TITLE:          Skills
     POSITIONS:
     - COMPANY:      Programming Languages
       DESCRIPTION:  
@@ -23,7 +23,7 @@ en:
       - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
     - COMPANY:      Languages
       DESCRIPTION:  
-      - Russian, Belarusian, French, German
+      - English, Russian, Belarusian, French, German
     - COMPANY:      Soft Skills
       DESCRIPTION:  
       - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
@@ -78,80 +78,80 @@ en:
 fr:
   HEADER: Mikhail Labar
   SECTIONS:
-  - TITLE:         Education
+  - TITLE:          Éducation
     POSITIONS:
-    - COMPANY:      University of Maryland, College Park
-      DATE-START:   September 2023
-      DATE-END:     Present
-      POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
-  - TITLE:         Skills
+    - COMPANY:      Université du Maryland, College Park
+      DATE-START:   Septembre 2023
+      DATE-END:     Présent
+      POSITION:     B.S. Génie mécanique, B.S. Gestion d'entreprise (GPA - 3.96)
+  - TITLE:          Compétences
     POSITIONS:
-    - COMPANY:      Programming Languages
+    - COMPANY:      Langages de programmation
       DESCRIPTION:  
       - C#, C++, Java, JS, Ruby, MATLAB, Python, HTML, CSS, Liquid
-    - COMPANY:      Software
+    - COMPANY:      Logiciels
       DESCRIPTION:  
       - Solidworks, Autodesk Fusion, Adobe Premiere Pro, Adobe Photoshop, Linux
-    - COMPANY:      Manufacturing
+    - COMPANY:      Fabrication
       DESCRIPTION:  
-      - Soldering, 3D Printing, Laser Cutting, Photolithography, CNC machining, Woodworking
-    - COMPANY:      Artificial Intelligence
+      - Soudure, Impression 3D, Découpe laser, Photolithographie, Usinage CNC, Travail du bois
+    - COMPANY:      Intelligence Artificielle
       DESCRIPTION:  
       - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
-    - COMPANY:      Languages
+    - COMPANY:      Langues
       DESCRIPTION:  
-      - Russian, Belarusian, French, German
-    - COMPANY:      Soft Skills
+      - Anglais, Russe, Biélorusse, Français, Allemand
+    - COMPANY:      Compétences générales
       DESCRIPTION:  
-      - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
-  - TITLE:         Experience
+      - Auto-initiative, Élaboration d'horaires, Délégation de tâches, Communicateur constant 
+  - TITLE:         Expérience
     POSITIONS:
     - COMPANY:      Dean's Student Advisory Council, Clark School of Engineering
-      DATE-START:   May 2024
-      DATE-END:     December 2024
-      POSITION:     Member
+      DATE-START:   Mai 2024
+      DATE-END:     Decembre 2024
+      POSITION:     Membre
       DESCRIPTION:
-      - Created agendas and schedules for meetings between students and faculty to tackle school issues
-      - Proposed and initiated efforts to improve conditions for students and organizations
+      - A crée d'ordres du jour et d'horaires pour les réunions entre les étudiants et les professeurs afin de s'attaquer aux problèmes de l'école
+      - A proposé et lancement d'efforts pour améliorer les conditions des étudiants et des organisations
     - COMPANY:      Dining Services Advisory Board, UMD RHA
-      DATE-START:   February 2024
-      DATE-END:     December 2024
-      POSITION:     Coordinator
+      DATE-START:   Février 2024
+      DATE-END:     Decembre 2024
+      POSITION:     Coordinateur
       DESCRIPTION:
-      - Organized and scheduled weekly meetings between dining services management and student representatives to discuss on-campus issues
-      - Outlined, proposed, and implemented multiple community-building efforts on campus
+      - A organisé et programmé des réunions hebdomadaires entre la direction des services de restauration et les représentants des étudiants pour discuter des problèmes sur le campus
+      - A décrit, proposé et mis en œuvre de multiples efforts de renforcement de la communauté sur le campus
     - COMPANY:      MEMS and Microfluidics Laboratory (MML), UMD
-      DATE-START:   February 2024
-      DATE-END:     November 2024
-      POSITION:     Undergraduate Researcher
+      DATE-START:   Février 2024
+      DATE-END:     Novembre 2024
+      POSITION:     Chercheur de premier cycle
       DESCRIPTION:
-      - Participated in the creation of a small-scale lab device for blood sepsis detection
-      - Manufactured PZT crystals into piezo elements using powder blasting techniques
-      - Worked in BSL2 lab and cleanroom settings, followed accompanying safety procedures
+      - A participé à la création d'un dispositif de laboratoire à petite échelle pour la détection de la septicémie sanguine
+      - A fabriqué des cristaux PZT en éléments piézoélectriques à l'aide de techniques de projection de poudre
+      - A travaillé dans des laboratoires BSL2 et des salles blanches, en suivant les procédures de sécurité qui l'accompagnent
     - COMPANY:      Mechanical Contractors Association of America (MCAA)
-      DATE-START:   September 2023
-      DATE-END:     May 2024
-      POSITION:     Project Team Member
+      DATE-START:   Septembre 2023
+      DATE-END:     Mai 2024
+      POSITION:     Membre de l'équipe de projet
       DESCRIPTION:
-      - Created a mock project bid for a commercial HVAC renovation project
-      - Analyzed engineering drawings to create project takeoffs
-      - Created Gantt charts for project scheduling
-      - Placed 9th in the country
+      - A créé une offre de projet fictive pour un projet de rénovation de CVC commercial
+      - A analysé des dessins techniques pour créer des décollages de projet
+      - A créé des diagrammes de Gantt pour la planification de projets
+      - A été classé 9e au pays
     - COMPANY:      University of Maryland Over Terrain Vehicle Project
-      DATE-START:   January 2024
-      DATE-END:     May 2024
-      POSITION:     Team Lead
+      DATE-START:   Janvier 2024
+      DATE-END:     Mai 2024
+      POSITION:     Chef d'équipe
       DESCRIPTION:
-      - Designed, manufactured, and programmed an autonomously navigating vehicle capable of object recognition through machine learning using Torch AI library
-      - Modeled, Laser cut, and 3D printed low-tolerance custom components for the vehicle
-      - Recognized nationally at conference on integrating AI into higher education
-    - COMPANY:      First Person View Drone Build Project
-      DATE-START:   May 2024
-      DATE-END:     August 2024
-      POSITION:     Builder, Pilot
+      - Conçu, fabriqué et programmé un véhicule à navigation autonome capable de reconnaître des objets grâce à l'apprentissage automatique à l'aide de la bibliothèque Torch AI
+      - Modélisé, découpé au laser et imprimé en 3D des composants personnalisés à faible tolérance pour le véhicule
+      - Reconnu à l'échelle nationale lors d'une conférence sur l'intégration de l'IA dans l'enseignement supérieur
+    - COMPANY:      Projet de construction d'un drone FPV
+      DATE-START:   Mai 2024
+      DATE-END:     Août 2024
+      POSITION:     Constructeur, Pilote
       DESCRIPTION:
-      - Designed, built, and configured drone to receive radio controls and transmit live video
-      - Designed and 3D printed camera mount for filming cinematic shots
+      - Conçu, construit et configuré un drone pour recevoir des commandes radio et transmettre des vidéos en direct
+      - Conçu et imprimé en 3D un support de caméra pour filmer des prises de vue cinématographiques
 ru:
   HEADER: Mikhail Labar
   SECTIONS:
@@ -309,77 +309,77 @@ be:
 de:
   HEADER: Mikhail Labar
   SECTIONS:
-  - TITLE:         Education
+  - TITLE:          Ausbildung
     POSITIONS:
     - COMPANY:      University of Maryland, College Park
       DATE-START:   September 2023
-      DATE-END:     Present
-      POSITION:     B.S. Mechanical Engineering, B.S. Business Management (GPA - 3.96)
-  - TITLE:         Skills
+      DATE-END:     Heute
+      POSITION:     B.S. Maschinenbau, B.S. Betriebswirtschaft (GPA - 3,96)
+  - TITLE:          Fähigkeiten
     POSITIONS:
-    - COMPANY:      Programming Languages
+    - COMPANY:      Programmiersprachen
       DESCRIPTION:  
       - C#, C++, Java, JS, Ruby, MATLAB, Python, HTML, CSS, Liquid
     - COMPANY:      Software
       DESCRIPTION:  
       - Solidworks, Autodesk Fusion, Adobe Premiere Pro, Adobe Photoshop, Linux
-    - COMPANY:      Manufacturing
+    - COMPANY:      Fertigung
       DESCRIPTION:  
-      - Soldering, 3D Printing, Laser Cutting, Photolithography, CNC machining, Woodworking
-    - COMPANY:      Artificial Intelligence
+      - Löten, 3D-Druck, Laserschneiden, Photolithografie, CNC-Bearbeitung, Holzbearbeitung
+    - COMPANY:      Künstliche Intelligenz
       DESCRIPTION:  
       - Stable Diffusion, Torch AI library, Google Colab, Llama 3  
-    - COMPANY:      Languages
+    - COMPANY:      Sprachen
       DESCRIPTION:  
-      - Russian, Belarusian, French, German
+      - Englisch, Russisch, Belarussisch, Französisch, Deutsch
     - COMPANY:      Soft Skills
       DESCRIPTION:  
-      - Self-Starter, Schedule Building, Task Delegation, Constant Communicator    
-  - TITLE:         Experience
+      - Eigeninitiative, Zeitplanerstellung, Aufgabendelegation, ständiger Kommunikator  
+  - TITLE:         Erfahrung
     POSITIONS:
     - COMPANY:      Dean's Student Advisory Council, Clark School of Engineering
-      DATE-START:   May 2024
-      DATE-END:     December 2024
-      POSITION:     Member
+      DATE-START:   Mai 2024
+      DATE-END:     Dezember 2024
+      POSITION:     Mitglied
       DESCRIPTION:
-      - Created agendas and schedules for meetings between students and faculty to tackle school issues
-      - Proposed and initiated efforts to improve conditions for students and organizations
+      - Erstellte Tagesordnungen und Zeitpläne für Treffen zwischen Studenten und Lehrkräften, um Schulprobleme zu besprechen
+      - Schlug und initiierte Maßnahmen zur Verbesserung der Bedingungen für Studenten und Organisationen
     - COMPANY:      Dining Services Advisory Board, UMD RHA
-      DATE-START:   February 2024
-      DATE-END:     December 2024
-      POSITION:     Coordinator
+      DATE-START:   Februar 2024
+      DATE-END:     Dezember 2024
+      POSITION:     Koordinator
       DESCRIPTION:
-      - Organized and scheduled weekly meetings between dining services management and student representatives to discuss on-campus issues
-      - Outlined, proposed, and implemented multiple community-building efforts on campus
+      - Organisierte und plante wöchentliche Treffen zwischen der Leitung des Speisesaals und den Studierendenvertretern, um Probleme auf dem Campus zu besprechen
+      - Skizzierte, schlug mehrere Gemeinschaftsbildungsmaßnahmen auf dem Campus vor und setzte sie um
     - COMPANY:      MEMS and Microfluidics Laboratory (MML), UMD
-      DATE-START:   February 2024
+      DATE-START:   Februar 2024
       DATE-END:     November 2024
-      POSITION:     Undergraduate Researcher
+      POSITION:     Studentischer Forscher
       DESCRIPTION:
-      - Participated in the creation of a small-scale lab device for blood sepsis detection
-      - Manufactured PZT crystals into piezo elements using powder blasting techniques
-      - Worked in BSL2 lab and cleanroom settings, followed accompanying safety procedures
+      - Beteiligte sich an der Entwicklung eines kleinen Laborgeräts zur Blutsepsiserkennung
+      - Herstellung von PZT-Kristallen zu Piezoelementen mithilfe von Pulverstrahltechniken
+      - Arbeitete in BSL2-Labor- und Reinraumumgebungen, befolgte die begleitenden Sicherheitsverfahren
     - COMPANY:      Mechanical Contractors Association of America (MCAA)
       DATE-START:   September 2023
-      DATE-END:     May 2024
-      POSITION:     Project Team Member
+      DATE-END:     Mai 2024
+      POSITION:     Mitglied des Projektteams
       DESCRIPTION:
-      - Created a mock project bid for a commercial HVAC renovation project
-      - Analyzed engineering drawings to create project takeoffs
-      - Created Gantt charts for project scheduling
-      - Placed 9th in the country
+      - Erstellte ein Scheinprojektangebot für ein kommerzielles HVAC-Renovierungsprojekt
+      - Analysierte technische Zeichnungen, um Projektabnahmen zu erstellen
+      - Erstellte Gantt-Diagramme für die Projektplanung
+      - Platz 9 im Land
     - COMPANY:      University of Maryland Over Terrain Vehicle Project
-      DATE-START:   January 2024
-      DATE-END:     May 2024
-      POSITION:     Team Lead
+      DATE-START:   Januar 2024
+      DATE-END:     Mai 2024
+      POSITION:     Teamleiter
       DESCRIPTION:
-      - Designed, manufactured, and programmed an autonomously navigating vehicle capable of object recognition through machine learning using Torch AI library
-      - Modeled, Laser cut, and 3D printed low-tolerance custom components for the vehicle
-      - Recognized nationally at conference on integrating AI into higher education
-    - COMPANY:      First Person View Drone Build Project
-      DATE-START:   May 2024
+      - Entwarf, fertigte und programmierte ein autonom navigierendes Fahrzeug, das mithilfe der Torch AI-Bibliothek Objekte durch maschinelles Lernen erkennen kann
+      - Modellierte, lasergeschnittene und 3D-gedruckte kundenspezifische Komponenten mit geringer Toleranz für das Fahrzeug
+      - Nationale Anerkennung auf einer Konferenz zur Integration von KI in die Hochschulbildung
+    - COMPANY:      FPV-Drohnenbauprojekt
+      DATE-START:   Mai 2024
       DATE-END:     August 2024
-      POSITION:     Builder, Pilot
+      POSITION:     Erbauer, Pilot
       DESCRIPTION:
-      - Designed, built, and configured drone to receive radio controls and transmit live video
-      - Designed and 3D printed camera mount for filming cinematic shots
+      - Drohne entworfen, gebaut und konfiguriert, um Funksteuerungen zu empfangen und Live-Videos zu übertragen
+      - Kamerahalterung für Filmaufnahmen entworfen und im 3D-Druckverfahren hergestellt
